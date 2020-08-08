@@ -1,0 +1,22 @@
+{
+  "name": "typescript-basics",
+  "version": "1.0.0",
+  "description": "Learning typescript basics with different examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DianaMS/TypeScript.git"
+  },
+  "keywords": [
+    "TypeScript"
+  ],
+  "author": "Diana Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DianaMS/TypeScript/issues"
+  },
+  "homepage": "https://github.com/DianaMS/TypeScript#readme"
+}
