@@ -1,0 +1,98 @@
+Que es typeScript?
+Es un superconjunto tipado de js que compila a js, que podemos usarlo en cualquier navegador, open-source
+provee un conjunto de tipos para usarlos con nuestras variables
+alto nivel de abstraccion 
+-codigo abierto
+-desarrollo desde difernetes plataformas, windows linux mac etc
+-el codigo puede ejecutarse en cualquier navegador o paltaforma que soporte js
+
+-->typeScript se puede agregar a proyectos actuales, se puede agregar el soporte de typeScript
+typeScript superconjunto de lenguaje de programacion js
+soporta todo lo del js ES6, ES5
+
+quien usa typeScript?
+microsoft, google, airbnb, slack, medium 
+
+porque usar typeScript?
+-podemos hacer uso de la programacion orientado a objetos
+-podemos potenciar el codigo js
+-podemos tener una mayor productividad, ya que typeScript se integra con mas herramientas que se traducen en escribir menos
+codigo y escribir mas
+-proyecto open source
+-podemos prevenir un 15% de bugs
+-podemos usar éste lenguaje en el lado del cliente y el servidor
+
+{Archivo de Configuración tsconfig.json}
+-Especifica la raiz de un proyecto typeScript
+-Permite configurar opciones para el compilador
+como generar ese archivo en nuestros proyetos? tsc --init
+
+Usando el archivo tsconfig.json
+--> tsc     Busca Informacion
+--> tsc --project platzi    Especifica un directorio que contiene la configuracion
+--> tsc file.ts     Omite la configuracion
+
+
+CUANDO USAR any EN typeScript
+-Usado para capturar valores dinámicos
+-Los valores pueden cambiar de tipo en el tiempo:
+    .Apis Externas
+    .Librería de terceros
+recuerda usar any cuando no estamos seguros del valor exacto que se guardará 
+en nuestra variable
+
+Para ejecutar typeScript(servicio que va a ir verificando cambios) ----> tsc --watch
+y en otra terminal para ejecutar el js
+
+CUANDO USAR void en typeScript
+-void es lo opuesto de any:
+representa la ausencia de tipo
+-comunmente se usa como tipo de retorno en funciones (no tiene sentido usarla en declaracion de variables)
+
+Tipo: never
+-Representa un valor que nunca ocurre
+    -Funciones que nunca retornan un valor 
+    -Funciones que lanzan excepciones
+
+-----NULL Y UNDEFINED La Opción --strictNullChecks
+.Solo permite asignar null y undefined a una variable de tipo any o sus tipos respectivos
+.Ayuda a evitar errores comunes en programacion de apps en el ámbito JavaScript
+
+Object vs Object
+-Object: instancia de la clase Object de JavaScript
+-object: tipo para valores no primitivos
+Con este tipo no se puede acceder a las propiedades del objeto
+
+Array
+.Al igual que js, ts permite definir un arreglo para contener un conjunto de valores
+.Usa dos notaciones [] y Array<tipo>
+
+Tuple
+.Las tuplas permiten expresar un arreglo con un número fijo de elementos
+.Los tipos de datos son conocidos y diferentes
+
+Enum
+.Los enumerados permiten definir un conjunto de constantes con nombre
+.Tienen la ventaja de adaptarse al contexto de la aplicación
+
+Unión de tipos
+.En typeScript se puede definir una variable con múltiples tipos de datos: Union Type
+.Se usa el símbolo de pipe('|') entre los tipos
+
+Tipos Literales
+.Una variable con un tipo literal puede contener unicamente una cadena del conjunto
+.Se usan cadenas como "tipos" combinados con el simbolo de pipe ('|') entre ellos
+
+Aserciones de Tipo
+.Cuando el programador puede conocer más que ts sobre el valor de una variable
+.En un mensaje al compilador "Confia en mi, se lo que hago"
+.Usa dos sintaxis <Angle Bracket> y (variable as tipo)
+
+Funciones en TypeScript
+-Los parámetros en las funciones son tipados
+-Se pueden definir parámetros opcionales
+-El tipo de retorno puede ser de un tipo básico, enum, alias, tipo literal o una combnacion de ellos
+
+Entendiendo las Interfaces
+Las Interfaces en TypeScript constituyen una forma poderosa de definir "contratos" tanto para tu proyecto,
+como para el codigo externo del mismo. 
